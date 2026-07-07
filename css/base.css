@@ -10,3 +10,56 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}
   background: rgb(208, 12, 12);
   border-radius: 8px;
 }
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111;
+    padding:18px 45px;
+    border-bottom:4px solid #E10600;
+}
+
+.logo img{
+    width:65px;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#E10600;
+}
+
+.nav-links a.active{
+    color:#E10600;
+}
+
+.top-btn{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#E10600;
+color:white;
+padding:12px 18px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+box-shadow:0 0 15px rgba(0,0,0,.4);
+}
