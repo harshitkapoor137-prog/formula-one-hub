@@ -5,6 +5,9 @@
   padding: 60px 40px;
 }
 
+.section-heading p{
+  text-align: center;
+}
 /* HEADER */
 .drivers-header {
   font-size: 16px;
