@@ -28,7 +28,31 @@ color:white;
 
 }
 .nav a{color:white;text-decoration:none;font-weight:bold}
-.logo{height:28px}
+.logo{
+
+height:42px;
+
+width:auto;
+
+display:block;
+
+}
+.nav-links{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+align-items:center;
+
+}
+.nav-links li{
+
+list-style:none;
+
+}
 .nav ul li a:hover {
   color: white;
   background: rgb(208, 12, 12);
@@ -54,5 +78,42 @@ background:#111;
 border-bottom:4px solid #E10600;
 
 z-index:999;
+
+}
+footer{
+
+background:#111;
+
+color:white;
+
+padding:60px 80px;
+
+margin-top:70px;
+
+}
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:60px;
+
+}
+
+.footer-grid a{
+  color:white;
+
+ text-decoration:none;
+
+ display:block;
+
+ margin:10px 0;
+
+ transition:.3s;
+}
+.footer-grid a:hover{
+
+color:#E10600;
 
 }
