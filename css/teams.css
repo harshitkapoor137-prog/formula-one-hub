@@ -141,3 +141,35 @@ footer {
 .nav-links a.active{
     color:#E10600;
 }
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+background:#111;
+
+padding:60px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.stat h2{
+
+font-size:48px;
+
+color:#E10600;
+
+margin-bottom:10px;
+
+}
+
+.stat p{
+
+font-size:20px;
+
+}
