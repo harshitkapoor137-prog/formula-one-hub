@@ -117,3 +117,52 @@ gap:60px;
 color:#E10600;
 
 }
+
+footer hr{
+
+margin:35px 0;
+
+border:none;
+
+height:1px;
+
+background:#444;
+
+}
+
+.copyright{
+
+text-align:center;
+
+font-size:15px;
+
+color:#bbb;
+
+line-height:1.8;
+
+}
+
+.footer-column h3{
+    color:#E10600;
+    margin-bottom:18px;
+    font-size:22px;
+}
+
+.footer-column p{
+    color:#d4d4d4;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.footer-column a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:12px 0;
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#E10600;
+    padding-left:8px;
+}
