@@ -1,8 +1,20 @@
 body{background-color: black;}
 .hero{ height:100vh; background:url("../images/Car.png") center/cover no-repeat; position:relative; display:flex; justify-content:center; align-items:center;}
 .hero::before{content:""; position:absolute; inset:0; background:linear-gradient( rgba(0,0,0,.55),rgba(0,0,0,.65));}
-.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;color:white}
-.hero-overlay h1{font-size:70px; letter-spacing:5px; margin-bottom:15px; text-transform:uppercase;}
+.hero-overlay{
+
+position:relative;
+
+z-index:5;
+
+text-align:center;
+
+width:75%;
+
+color:white;
+
+}
+.hero-overlay h1{font-size:92px; font-weight:800; letter-spacing:6px;; letter-spacing:5px; margin-bottom:15px; text-transform:uppercase;}
 .hero-overlay h2{
 
     font-size:32px;
@@ -43,12 +55,23 @@ body{background-color: black;}
     gap:25px;
 
 }
+.btn-primary{
+
+background:#E10600;
+
+padding:18px 42px;
+
+border-radius:50px;
+
+font-size:18px;
+
+box-shadow:0 8px 25px rgba(225,6,0,.35);
+
+}
 .btn-primary:hover{
-
-    background:#b00000;
-
     transform:translateY(-5px);
-
+    
+    box-shadow:0 15px 35px rgba(225,6,0,.45);
 }
 .btn-secondary{
 
@@ -69,7 +92,11 @@ body{background-color: black;}
 }
 .btn-secondary:hover{
 
-    background:white;
+    background:#E10600;
+
+    border-color:#E10600;
+
+    color:white;
 
     color:black;
 
@@ -88,7 +115,33 @@ body{background-color: black;}
 .home-news{font-size:30px; padding:40px}
 .home-news h2{font-size:36px; color: white}
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-.news-card{background:#ffffff;padding:40px;font-weight:bold}
+.news-card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+transition:.35s;
+
+}
+.news-card img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+}
+.news-card:hover{
+
+transform:translateY(-12px);
+
+}
 .news-card ~p{
     background: url('../images/Max\ Verstppen\ Quali.png')
 }

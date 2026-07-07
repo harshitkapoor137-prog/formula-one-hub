@@ -39,8 +39,12 @@ body {
   transition: transform 0.3s ease;
 }
 
-.team-card:hover {
-  transform: translateY(-8px);
+.team-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.2);
+
 }
 
 .team-card img {
@@ -74,11 +78,14 @@ body {
   opacity: 1;
 }
 
-.team-overlay a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
+.team-overlay a{
+
+background:#E10600;
+
+padding:14px 26px;
+
+border-radius:40px;
+
 }
 
 /* TEAM COLOR ACCENTS */
@@ -171,5 +178,27 @@ margin-bottom:10px;
 .stat p{
 
 font-size:20px;
+
+}
+
+.quote{
+
+background:#E10600;
+
+color:white;
+
+text-align:center;
+
+padding:80px 20px;
+
+}
+
+.quote h2{
+
+font-size:42px;
+
+font-style:italic;
+
+margin-bottom:20px;
 
 }
