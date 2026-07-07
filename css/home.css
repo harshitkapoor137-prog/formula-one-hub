@@ -1,0 +1,52 @@
+body{background-color: black;}
+.hero{height:100vh;background:url('../images/Car.png') center/cover no-repeat;position:relative}
+.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;color:white}
+.hero-overlay h1{font-size:6rem;margin:0}
+.hero-overlay p{font-size:1.4rem}
+.home-news{font-size:30px; padding:40px}
+.home-news h2{font-size:36px; color: white}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.news-card{background:#ffffff;padding:40px;font-weight:bold}
+.news-card ~p{
+    background: url('../images/Max\ Verstppen\ Quali.png')
+}
+/* RED DIVIDER */
+.red-divider {
+  width: 100%;
+  height: 6px;
+  background: #e10600; /* F1 Red */
+}
+.divider{
+    font-size: 18px;
+    text-align: right;
+    width: 100%;
+  height: 50px;
+  background: #e10600; /* F1 Red */
+}
+/* NAVBAR LAYOUT */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e10600;
+  padding: 14px 40px;
+}
+
+/* LEFT SIDE (LOGO + NAME) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 34px;
+}
+
+/* SITE NAME */
+.site-name {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

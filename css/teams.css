@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+.teams-section {
+  max-width: 1300px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* TEAM CARD */
+.team-card {
+  position: relative;
+  background: white;
+  border-radius: 14px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.team-card img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* OVERLAY */
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover .team-overlay {
+  opacity: 1;
+}
+
+.team-overlay a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* TEAM COLOR ACCENTS */
+.redbull { border-bottom: 5px solid #1e41ff; }
+.ferrari { border-bottom: 5px solid #dc0000; }
+.mercedes { border-bottom: 5px solid #0bdfc9; }
+.mclaren { border-bottom: 5px solid #ff8700; }
+.aston { border-bottom: 5px solid #006f62; }
+.alphatauri{border-bottom: 5px solid #3705ee;}
+.haas{border-bottom: 5px solid #d60c27;}
+.alpine{border-bottom: 5px solid #62b1c3;}
+/* MOBILE */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: right;
+  padding: 20px;
+}

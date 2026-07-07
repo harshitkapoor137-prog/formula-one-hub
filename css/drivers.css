@@ -1,0 +1,158 @@
+.drivers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;padding:40px}
+.driver-card{background:#111;color:white;padding:60px;text-align:center;font-size:1.2rem}
+/* SECTION */
+.drivers-section {
+  padding: 60px 40px;
+}
+
+/* HEADER */
+.drivers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.drivers-header h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.view-all {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* HORIZONTAL SCROLL ROW */
+.drivers-row {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.drivers-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.drivers-row::-webkit-scrollbar-thumb {
+  background: #e10600;
+  border-radius: 10px;
+}
+
+/* CARD */
+.driver-card {
+  min-width: 220px;
+  height: 340px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
+
+.driver-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.driver-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+}
+
+/* NAME */
+.driver-name {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 24px;
+}
+
+.driver-name span {
+  font-size: rem;
+}
+
+.driver-name strong {
+  display: block;
+  font-size: 2rem;
+}
+
+/* TEAM COLORS */
+.mclaren { background: linear-gradient(135deg, #ff8000, #ff9a1f); }
+.mercedes { background: linear-gradient(135deg, #00d2be, #007a6f); }
+.redbull { background: linear-gradient(135deg, #1e41ff, #001a66); }
+.ferrari { background: linear-gradient(135deg, #dc0000, #8b0000); }
+.red-divider {
+  width: 100%;
+  height: 12px;
+  background: #e10600; /* F1 Red */
+}
+
+/* DRIVER GRID */
+.drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* DRIVER CARD */
+.driver-card {
+  height: 360px;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.driver-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE WRAPPER */
+.driver-img {
+  width: 100%;
+  height: 260px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* IMAGE ITSELF */
+.driver-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 🔥 THIS IS THE KEY */
+  object-position: center;
+}
+
+/* DRIVER NAME */
+.driver-name {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.driver-name .first {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.driver-name .last {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: right;
+  padding: 20px;
+}
